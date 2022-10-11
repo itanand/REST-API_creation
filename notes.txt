@@ -1,0 +1,20 @@
+
+patch - patch is used for partial modification.
+
+put - put is used for completely override the data.
+
+callback function -
+
+app.get('/', (req, res) => res.send('Hello from homePage. '));
+
+
+function greeting(name) {
+  alert(`Hello, ${name}`);
+}
+
+function processUserInput(callback) {
+  const name = prompt("Please enter your name.");
+  callback(name);
+}
+
+processUserInput(greeting);
